@@ -1,6 +1,16 @@
 Yahtzee
 =======
 
+// We're not using GIT in a conventional way here :-)
+// But let's just go with it. I don't want to throw too much at you at once.
+
+// Some of the problems that I've commented on below are syntactical. Eclipse should be telling you that there
+// are compilation errors. You need to get this stuff compiling first.
+
+// I think you've got the right kind of idea. Just get the code compiling and then look at the main suggestion
+// I'm making about removing duplicate code. This is an important thing. When you've done it, delete all of the
+// TODO's and push it to GIT again.
+
 import java.util.*;
 
 public class yams{
@@ -11,8 +21,13 @@ public class yams{
 
 		valeur=1;
 		sum=0;
+		
+		// TODO: I'm getting a compilation error on the line below. Are you missing a type declaration? What type is 'i'?
+		// Also, you seem to be missing the part of the for loop construct that increments the loop variable.
+		// Can you fill it in?
 		for(i=0; i<=die.length){
 		   if(die[i]==valeur){
+		          // TODO: Should you be using '==' here?
 	              sum==sum+valeur;
 	           }
 		}
@@ -34,6 +49,12 @@ public class yams{
 	}
 	
 	/* it's the same code of "ones" and "twos" for the 3s,4s,5s,6s */
+	// TODO OK. So the first thing I would do is recognise that you have essentially the same piece of code 6 times.
+	// The only difference between those 6 methods is the value of 'valeur'. When you have functions that are duplicated
+	// except for some 'data', eliminate the duplication by passing the data in.  i.e. fill this in:
+	static int someSensibleName (int[]die, int valeur) {
+		// TODO fill this in and then delete the other 6 methods
+	}
 
 	static int full (int[]die) {
 		int points;
