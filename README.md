@@ -5,7 +5,7 @@ Yahtzee
 
 import java.util.*;
 
-public class lola{
+public class yams{
 
 static int deUnASix(int[]die, int valeur) { 
     int sum;
