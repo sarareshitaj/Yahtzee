@@ -149,7 +149,7 @@ public class yams {
         // to throw the dice. They will be allowed to rethrow some of the dice up to 3 times before the score
         // is evaluated.
         // What I want you to do is write code here that calls a function (that doesn't
-        // exist yet) that allows the players to play a round. At the end of the round, it should return
+        // exist yet) that will allow the players to play a round. At the end of the round, it will return
         // an updated score sheet for each player, which it will use in the next round.
         // It might seem strange to call a function that doesn't exist yet, but what you're actually doing is
         // saying 'this is what I want at this layer'. In order to do this, you'll need to think about what
